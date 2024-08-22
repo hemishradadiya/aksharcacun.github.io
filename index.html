@@ -31,17 +31,17 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <!-- </div> -->
-                <!-- <div class="col-sm-12 col-md-9"> -->
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav gap-4">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#product">Products</a></li>
                         <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
 
-                        <button class="btn btn-success rounded-5">Contact Us</button>
+                        <button class="btn btn-success rounded-5" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
+                            Contact Us
+                        </button>
                     </ul>
                 </div>
             </nav>
@@ -49,7 +49,7 @@
     </div>
 
     <div class="container-fluid back-slider all-center">
-        <div class="container ">
+        <div class="container">
             <div class="row font-white position-relative">
                 <div class="col-sm-4">
                     <img src="Images/slider-img.png" class="back-pos">
@@ -63,7 +63,7 @@
         </div>
     </div>
 
-    <div class="container-fluid">
+    <div class="container-fluid" id="about">
         <div class="container pt-5">
             <div class="row">
                 <div class="col-sm-12 col-md-6 text-end">
@@ -119,41 +119,41 @@
             <div class="row text-center">
                 <div class="col-sm-6 col-md-4">
                     <div class="values-box wow animate__fadeInLeft">
-                        <img src="Images/icon img/1.png" alt="" class="rounded-circle backg-icon" width="60px">
+                        <img src="Images/1.png" alt="" class="rounded-circle backg-icon" width="60px">
                         <p>Environmental Sustainability
                             We are dedicated to promoting environmental sustainability through our practices. We focus on preserving natural resources, reducing waste, and minimizing environmental impact in every step of our manufacturing process.</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4">
                     <div class="values-box wow animate__fadeInDown">
-                        <img src="Images/icon img/2.png" alt="" class="rounded-circle backg-icon" width="60px">
+                        <img src="Images/2.png" alt="" class="rounded-circle backg-icon" width="60px">
                         <p class="text-justify">The health, safety, and well-being of our employees, customers, and the communities we serve are of utmost importance. We maintain a safe and healthy work environment while adhering to strict safety and environmental standards.</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4">
                     <div class="values-box wow animate__fadeInRight">
-                        <img src="Images/icon img/3.png" alt="" class="rounded-circle backg-icon" width="60px">
+                        <img src="Images/3.png" alt="" class="rounded-circle backg-icon" width="60px">
                         <p class="text-justify">Innovation
                             We foster innovation to continuously improve our technologies, processes, and products. Our commitment to innovation helps us advance sustainable practices and enhance the quality of our cocoons and silk products.</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4">
                     <div class="values-box wow animate__fadeInLeft">
-                        <img src="Images/icon img/4.png" alt="" class="rounded-circle backg-icon" width="60px">
+                        <img src="Images/4.png" alt="" class="rounded-circle backg-icon" width="60px">
                         <p class="text-justify">Social Responsibility
                             We are committed to being socially responsible and contributing to the well-being of our communities. We engage in initiatives that support local development and prioritize ethical practices in all aspects of our business.</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4">
                     <div class="values-box wow animate__fadeInUp">
-                        <img src="Images/icon img/5.png" alt="" class="rounded-circle backg-icon" width="60px">
+                        <img src="Images/5.png" alt="" class="rounded-circle backg-icon" width="60px">
                         <p class="text-justify">Transparency and Accountability
                             We uphold transparency in our operations, ensuring that all stakeholders are informed about our impact, goals, and progress. We take accountability for our actions and strive for continuous improvement.</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4">
                     <div class="values-box wow animate__fadeInRight">
-                        <img src="Images/icon img/6.png" alt="" class="rounded-circle backg-icon" width="60px">
+                        <img src="Images/6.png" alt="" class="rounded-circle backg-icon" width="60px">
                         <p class="text-justify">Collaboration and Partnerships
                             We value collaboration with like-minded organizations, government bodies, and communities. By working together, we aim to achieve a more sustainable and prosperous future for the cocoon industry.</p>
                     </div>
@@ -171,21 +171,21 @@
                 </div>
                 <div class="col-sm-4 col-md-3">
                     <div class="backg-white py-sm-4">
-                        <img src="Images/Quality/quality.png" alt="" width="60px" class="pt-2 wow animate__flash">
+                        <img src="Images/quality.png" alt="" width="60px" class="pt-2 wow animate__flash">
                         <h5 class="pt-2">Best Quality</h5>
                     </div>
                 </div>
 
                 <div class="col-sm-4 col-md-3">
                     <div class="backg-white py-sm-4">
-                        <img src="Images/Quality/setting.png" alt="" width="63px" class="pt-2 wow animate__flash">
+                        <img src="Images/setting.png" alt="" width="63px" class="pt-2 wow animate__flash">
                         <h5 class="pt-2">Services</h5>
                     </div>
 
                 </div>
                 <div class="col-sm-4 col-md-3">
                     <div class="backg-white py-sm-4">
-                        <img src="Images/Quality/24x7.png" alt="" width="55px" class="pt-2 wow animate__flash">
+                        <img src="Images/24x7.png" alt="" width="55px" class="pt-2 wow animate__flash">
                         <h5 class="pt-2">24X7 Support</h5>
                     </div>
                 </div>
@@ -211,10 +211,10 @@
     </div>
 
     
-    <div class="container-fluid">
+    <div class="container-fluid" id="product">
         <div class="container pt-sm-3">
             <div class="row text-center">
-                <h2>Company Services</h2>
+                <h2>Company Products</h2>
             </div>
 
             <div class="row py-sm-3">
@@ -230,7 +230,7 @@
                     <div class="item">
                         <div class="card rounded-4 border-0" style="min-height: 400px;">
                             <!-- <h4 class="font-green">Color Bobin</h4> -->
-                            <img src="images/Service-1.jpg" alt="...">
+                            <img src="images/thread_2.jpg" alt="...">
                         </div>
                     </div>
 
@@ -242,71 +242,107 @@
                     </div>
                 </div>
             </div>
+            <div class="row py-sm-3">
+                <div class="service owl-carousel owl-item">
+
+                    <div class="item">
+                        <div class="card rounded-4 border-0" style="min-height: 400px;">
+                            <!-- <h4 class="font-green">White Bobin</h4> -->
+                            <img src="images/thread_1.jpg" alt="...">
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="card rounded-4 border-0" style="min-height: 400px;">
+                            <!-- <h4 class="font-green">Color Bobin</h4> -->
+                            <img src="images/Service-1.jpg" alt="...">
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="card rounded-4 border-0" style="min-height: 400px;">
+                            <!-- <h4 class="font-green">White Bobin</h4> -->
+                            <img src="images/thread_4.jpg" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     </div>
 
-    <div class="container-fluid">
+    <div class="container-fluid" id="contact">
         <div class="container py-4">
             <h2 class="text-center">Contact Us</h2>
-            <div class="row pt-md-3">
-                <div class="col-sm-6 col-md-3">
-                    <img src="Images/com-logo/logo1.png" alt="" width="100%">
+            <div class="contact-section">
+                <div class="contact-map">
+                    <iframe src="https://maps.google.com/maps?q=+brc+compound+&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+                            allowfullscreen="" loading="lazy"></iframe>
                 </div>
-                <div class="col-sm-6 col-md-3">
-                    <img src="Images/com-logo/logo2.png" alt="" width="100%">
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <img src="Images/com-logo/logo3.png" alt="" width="100%">
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <img src="Images/com-logo/logo4.png" alt="" width="100%">
+        
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <strong>Sales Manager :</strong>
+                        <span>Sunil Sharma - +91 9898709832</span>
+                    </div>
+                    <div class="contact-item">
+                        <strong>CEO:</strong>
+                        <span>Anirudh Kothiya - +91 8849882905</span>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Email:</strong>
+                        <span>anirudhkothiys47@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Business Address:</strong>
+                        <span>Q-32, Lakshminarayan Ind. B.R.C Compund, Udhna Road, Surat.</span>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container-fluid footer">
+    <div class="container-fluid footer text-white">
         <div class="container py-4">
             <div class="row">
+                <!-- Company Info -->
                 <div class="col-md-4 col-sm-6">
-                    <img src="Images/footer-logo.png" width="60%" class="text-center">
-                    <p class="font-white pt-4">Lorem Ipsum is simply dummy text of the printing and typesetting
-                        industry.</p>
-                    <h4>Follow Us On:</h4>
-                    <span class="font-white">
-                        <i class="fa-2x fa-brands fa-whatsapp mb-3"></i>
-                        <i class="fa-2x fa-brands fa-instagram mb-3"></i>
-                        <i class="fa-2x fa-brands fa-facebook mb-3"></i>
-                    </span>
+                    <h4>About Akshar Cocun</h4>
+                    <p>Akshar Cocun specializes in the manufacturing of high-quality cocoon thread bobbins, providing reliable and durable solutions for the textile industry.</p>
                 </div>
-
+    
+                <!-- Quick Links -->
                 <div class="col-md-2 col-sm-6">
-                    <h4>QUICK LINKS</h4>
-                    <ul>
-                        <li>Services</li>
-                        <li>About us</li>
-                        <li>OurProjects</li>
-                        <li>Blog</li>
-                        <li>Contact Us</li>
+                    <h4>Quick Links</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#product" class="text-white">Services</a></li>
+                        <li><a href="#about" class="text-white">About Us</a></li>
+                        <li><a href="#contact" class="text-white">Contact Us</a></li>
                     </ul>
                 </div>
-
+    
+                <!-- Services -->
                 <div class="col-md-2 col-sm-6">
-                    <h4>SERVICES</h4>
-                    <li>Bio Solutions</li>
-                    <li>Crop Protection</li>
-                    <li>Seeds</li>
+                    <h4>Our Services</h4>
+                    <ul class="list-unstyled">
+                        <li>Manufacturing</li>
+                        <li>Quality Control</li>
+                        <li>Supply Chain Management</li>
+                    </ul>
                 </div>
-
+    
+                <!-- Contact Info -->
                 <div class="col-md-4 col-sm-6">
-                    <h4>Newsletter</h4>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    <label for="exampleInputEmail1"></label>
-                    <input type="email" class="email-box" id="exampleInputEmail1" aria-describedby="emailHelp"
-                        placeholder="Enter email">
-
-                    <button class="btn btn-success rounded-pill">Subscribe </button>
+                    <h4>Contact Us</h4>
+                    <p><strong>Sales Manager:</strong> +91 9898709832</p>
+                    <p><strong>Email:</strong>anirudhkothiys47@gmail.com</p>
+                    <p><strong>Address:</strong> Q-32, Lakshminarayan Industries, BRC Compound, Surat, Gujarat, India</p>
+                </div>
+            </div>
+    
+            <div class="row mt-4">
+                <div class="col text-center">
+                    <p class="mb-0">© 2024 Akshar Cocun. All Rights Reserved.</p>
                 </div>
             </div>
         </div>
